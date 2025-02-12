@@ -3,3 +3,42 @@ JassAI KeyFinder is an AI-powered keyword research tool designed to help you dis
 cd path/to/your/project
 git init
 git add .
+git commit -m "Initial commit"
+import React from 'react';
+import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Search, TrendingUp } from 'lucide-react';
+
+export default function HomePage() {
+  return (
+    <div className="min-h-screen bg-gray-100 p-4">
+      <header className="text-center my-8">
+        <h1 className="text-4xl font-bold text-gray-800">JassAI KeyFinder</h1>
+        <p className="text-lg text-gray-600">AI-Powered Keyword Research Tool</p>
+      </header>
+
+      <main className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <Card className="bg-white shadow-xl rounded-2xl p-6">
+          <CardContent>
+            <h2 className="text-2xl font-semibold text-gray-800 flex items-center"><Search className="mr-2" /> Find Keywords</h2>
+            <p className="text-gray-600 mt-2">Discover high-ranking keywords using AI.</p>
+            <Button className="mt-4">Start Searching</Button>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-white shadow-xl rounded-2xl p-6">
+          <CardContent>
+            <h2 className="text-2xl font-semibold text-gray-800 flex items-center"><TrendingUp className="mr-2" /> Trending Keywords</h2>
+            <p className="text-gray-600 mt-2">Explore the latest trending keywords in your niche.</p>
+            <Button className="mt-4">Explore Trends</Button>
+          </CardContent>
+        </Card>
+      </main>
+
+      <footer className="text-center mt-12 text-gray-500">
+        © 2025 JassAI KeyFinder. All rights reserved.
+      </footer>
+    </div>
+  );
+}
+
